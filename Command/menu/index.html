@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Comandos</title>
+</head>
+<body>
+    <h1>Menú de Opciones</h1>
+    <ul>
+        <li><a href="#" onclick="executeCommand('Option1Command')">Opción 1</a></li>
+        <li><a href="#" onclick="executeCommand('Option2Command')">Opción 2</a></li>
+        <li><a href="#" onclick="executeCommand('Option3Command')">Opción 3</a></li>
+    </ul>
+
+    <!-- Resultado de la ejecución del comando -->
+    <div id="result"></div>
+
+    <script>
+        function executeCommand(commandName) {
+            // Realizamos una solicitud AJAX a nuestro backend en PHP
+            fetch('execute_command.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ command: commandName })
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Mostramos el resultado en la página
+                document.getElementById('result').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
