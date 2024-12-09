@@ -9,7 +9,7 @@ Gestionar una Boda
 Gestionar la venta de una propiedad
     - si quieres vender un piso, vas a tener que poner el anuncio, gestionarlo, enseñar el piso,
         redactar contrato de arras, gestionar la notaría para la firma, gestionar temas legales y fiscales...
-    - contratando a una inmobiliaria, te olvidas de todo ello. Sólo tendrás que recisar las propuestas, ir el día de la firma, y pagar los impuestos.
+    - contratando a una inmobiliaria, te olvidas de todo ello. Sólo tendrás que revisar las propuestas, ir el día de la firma, y pagar los impuestos.
 
 Gestionar un viaje
 
