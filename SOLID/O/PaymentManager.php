@@ -7,7 +7,7 @@ namespace Ejemplos\SOLID\O;
 class PaymentManager
 {
     /*
-    //antes de cumplir Open/Close Prinncipal (Principio Abierto/Cerrado)
+    //antes de cumplir Open/Close Principal (Principio Abierto/Cerrado)
     // PROBLEMA:
     // vemos que al constructor se le inyecta un objeto de PaypalIpn.
     // ¿Y si ahora queremos otro método de pago? pues tendríamos que modificar bastante el código.
