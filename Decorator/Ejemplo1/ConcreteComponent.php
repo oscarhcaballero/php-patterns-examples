@@ -1,7 +1,8 @@
 <?php
 declare (strict_types=1);
-namespace Ejemplos\Decorator;
+namespace Ejemplos\Decorator\Ejemplo1;
 
+// Implemantamos la Interfaz de Component
 class ConcreteComponent extends Component
 {
     public function __construct()

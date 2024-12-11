@@ -1,6 +1,9 @@
 <?php
 declare (strict_types=1);
-namespace Ejemplos\Decorator;
+namespace Ejemplos\Decorator\Ejemplo1;
+
+
+// Component define la Interfaz
 
 abstract class Component
 {

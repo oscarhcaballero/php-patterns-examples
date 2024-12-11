@@ -1,6 +1,6 @@
 <?php 
 declare (strict_types=1);
-namespace Ejemplos\Decorator;
+namespace Ejemplos\Decorator\Ejemplo1;
 
 class Client
 {
@@ -14,6 +14,7 @@ class Client
         echo $this->component->getData();
         echo "Client:\t\t\t";
         echo $this->component->getValue();
+        echo "\n";
     }
 
     private function wrapComponent(Component $component)
