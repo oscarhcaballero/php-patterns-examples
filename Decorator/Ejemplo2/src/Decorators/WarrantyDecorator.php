@@ -2,8 +2,6 @@
 declare (strict_types= 1);
 namespace Ejemplos\Decorator\Ejemplo2\src\Decorators;
 
-// como extendemos ProductDecorator, el cual implementa Product, necesitamos la interfaz Product
-use Ejemplos\Decorator\Ejemplo2\Components\Product;
 
 // Decorador: interfaz que implementa la interfaz del Componente (en este ejemplo Product)
 // Con los Decoradores Concretos añadimos funcionalidades y responsabilidades al Componente
