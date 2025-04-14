@@ -25,7 +25,9 @@ abstract class FatherClass {
      * Este es el Template Method (método plantilla) que define el flujo de trabajo
      */
     public function templateMethod():void {
-         
+        
+        $this->commonMethod();
+
         $this->processOne();   
         $this->processTwo(); 
         $this->processThree();
@@ -33,6 +35,20 @@ abstract class FatherClass {
     }
 
 
+    /**
+     * Este método es común a todas las clases hijas
+     * Se puede usar en el flujo de trabajo del Template Method
+     */
+    protected function commonMethod():void
+    {
+        echo "Common Method.". PHP_EOL;
+    }
+    
+    
+    /**
+     * Los métodos abstractos son los que las clases hijas deben implementar
+     * Cada clase hija implementará estos métodos de forma diferente
+     */
     abstract protected function processOne():void;
     abstract protected function processTwo():void;
     abstract protected function processThree():void;
