@@ -1,4 +1,8 @@
 <?php
+
+
+use Exception;
+
 /*
     El principio de sustitución de Liskov (Liskov Substitution Principle, LSP) 
     establece que una clase derivada debe poder ser usada en lugar de su clase base sin alterar el comportamiento del programa. 
